@@ -10,4 +10,6 @@ RUN curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -
     && chmod +x kubectl \
     && mv kubectl /usr/local/bin/kubectl
 
+RUN apk add aws-cli
+
 USER jenkins
